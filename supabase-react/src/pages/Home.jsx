@@ -31,6 +31,7 @@ const Home = ({ session }) => {
     return ( 
         <div>
             <h1>Home</h1>
+            <p>username: {username}</p>
             <div>
                 <button className="button block" type="button" onClick={() => supabase.auth.signOut()}>
                     Sign Out
